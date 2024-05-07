@@ -1,12 +1,5 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html"
-  },
-
-  "routes": [
-    {
-      "route": "/.auth/login/github",
-      "statusCode": 404
-    }
-  ] 
+  }
 }
