@@ -1,0 +1,15 @@
+{
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
+  "configurations": {
+    "single-web-application-default-auth": {
+      "appLocation": ".",
+      "outputLocation": "bin\\wwwroot",
+      "dataApiLocation": "swa-db-connections",
+      "dataApiPort": 5033,
+      "commentdataApiDevserverUrl": "http://localhost:5033",
+      "appBuildCommand": "dotnet publish -c Release -o bin",
+      "run": "dotnet watch run",
+      "appDevserverUrl": "http://localhost:8000"
+    }
+  }
+}
