@@ -50,7 +50,7 @@
       "permissions": [
         {
           "actions": [ "*" ],
-          "role": "Sample.Role"
+          "role": "samplerole"
         }
       ]
     }
