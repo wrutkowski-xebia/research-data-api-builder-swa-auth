@@ -12,8 +12,7 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.
 
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddOptions();
-builder.Services.AddAuthorizationCore();
-builder.Services.AddScoped<AuthenticationStateProvider, AzureSwaAuthenticationStateProvider>();
+builder.Services.AddAuthorizationCore().AddScoped<AuthenticationStateProvider, AzureSwaAuthenticationStateProvider>();
 
 
 

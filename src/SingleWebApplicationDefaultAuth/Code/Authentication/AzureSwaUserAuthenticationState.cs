@@ -2,6 +2,6 @@
 {
     public class AzureSwaUserAuthenticationState
     {
-        public AzureSwaClientPrincipal AzureSwaClientPrincipal { get; set; } = null!;
+        public AzureSwaClientPrincipal ClientPrincipal { get; set; } = null!;
     }
 }
