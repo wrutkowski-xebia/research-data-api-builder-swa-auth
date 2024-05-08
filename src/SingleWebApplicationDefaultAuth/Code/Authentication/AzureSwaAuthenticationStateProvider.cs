@@ -21,12 +21,12 @@ namespace SingleWebApplicationDefaultAuth.Code.Authentication
 
                 var state = await _client.GetFromJsonAsync<AzureSwaUserAuthenticationState>("/.auth/me");
 
-                if (state == null || state.AzureSwaClientPrincipal == null)
+                if (state == null || state.ClientPrincipal == null)
                 {
                     return new AuthenticationState(new ClaimsPrincipal());
                 }
 
-                var principal = state.AzureSwaClientPrincipal;
+                var principal = state.ClientPrincipal;
                 principal.UserRoles = principal.UserRoles.Except(new string[] { "anonymous" }, StringComparer.CurrentCultureIgnoreCase);
 
                 if (!principal.UserRoles.Any())
