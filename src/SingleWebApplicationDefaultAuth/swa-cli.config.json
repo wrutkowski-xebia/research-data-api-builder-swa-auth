@@ -5,8 +5,6 @@
       "appLocation": ".",
       "outputLocation": "bin\\wwwroot",
       "dataApiLocation": "swa-db-connections",
-      "dataApiPort": 5033,
-      "dataApiDevserverUrl": "http://127.0.0.1:5033",
       "appBuildCommand": "dotnet publish -c Release -o bin",
       "run": "dotnet watch run",
       "appDevserverUrl": "http://127.0.0.1:5043"
