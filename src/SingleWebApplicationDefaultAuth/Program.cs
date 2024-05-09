@@ -15,7 +15,6 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddOptions();
 builder.Services.AddAuthorizationCore().AddScoped<AuthenticationStateProvider, AzureSwaAuthenticationStateProvider>();
 
-builder.Services.AddTransient<UserDabRoleHeader>();
 builder.Services.AddHttpClients(builder.Configuration);
 
 await builder.Build().RunAsync();

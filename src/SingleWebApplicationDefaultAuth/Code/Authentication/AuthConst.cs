@@ -5,5 +5,7 @@
         public const string RoleClaim = "appRole";
         public const string Roles = "roles";
         public const string DataApiBuilderAuthorizationHeader = "X-MS-API-ROLE";
+        public const string SampleRole = "samplerole";
+
     }
 }
