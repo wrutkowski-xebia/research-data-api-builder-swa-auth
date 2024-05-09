@@ -6,7 +6,6 @@ Possibility to run Data API builder solution within Static Web App (SWA default 
 - in web browser go to `127.0.0.1:4280`
 
 ### Problems
-- MS AAD needs some additional rights (msaadauth.png)
 - Local DEV: swa start - use `127.0.0.1`:4280 instead of `localhost` (for emulating login) 
 - DAB authentication when hosted on local with Docker, isn't working with local SWA CLI authentication emulator
 - roles change could take some time so it can be taken as authorization don't validate roles when checking instantly 
